@@ -30,16 +30,10 @@ header span {
 
 
 @media screen and (max-width:480px) {
-    header {}
-
     header h5 {
-        /* display: block; */
-        /* flex-wrap: wrap; */
         font-size: 14px;
         margin-right: 40px;
         text-align: center;
-        /* display: flex; */
-        /* flex-direction: column; */
     }
 
     header span {

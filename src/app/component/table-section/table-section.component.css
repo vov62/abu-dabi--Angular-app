@@ -1,18 +1,8 @@
-table {
-    /* background: yellowgreen; */
-    /* display: block !important;
-    overflow-x: auto !important;
-    width: 100% !important; */
-}
-
-
 .table td,
 .table th {
-
     white-space: nowrap;
-    font-size: 11px;
+    font-size: 10px;
     background: #f9f9f9;
-
 }
 
 @media screen and (max-width:550px) {
@@ -40,10 +30,6 @@ table {
         position: absolute;
         right: 6px;
         font-weight: bold;
-    }
-
-    #table-res table {
-        /* width: 200px; */
     }
 
 }

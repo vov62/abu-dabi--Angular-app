@@ -9,6 +9,7 @@ export class PatientsContentComponent implements OnInit {
 
   // list of patient details.
   patient = {
+    visitNum: 123456,
     name: 'שרי נוי',
     id: 200443085,
     age: 33,

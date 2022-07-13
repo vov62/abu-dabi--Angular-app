@@ -1,6 +1,8 @@
 <!-- component of main content and side bar, main content component is nested component -->
+<!-- data binding, event binding -->
 
 <div class="main-content d-flex">
+    <!-- the event binding listens for the buttons click events and calls the component-->
     <button class="btn open-sidebar-btn" (click)="openMenu() ">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#BDD1E4" class="bi bi-list"
             viewBox="0 0 16 16">
@@ -17,7 +19,9 @@
             <div class="logo">Logo</div>
         </div>
 
+        <!--  render into the list the values from the array of list from the ts component -->
         <ul class="list-unstyled">
+            <!-- loop that runs over array or object -->
             <li class="nav-list-item" *ngFor="let item of navList">
                 <i class="{{item.icon}}"></i>
                 <span>
