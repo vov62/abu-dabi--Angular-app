@@ -1,0 +1,49 @@
+table {
+    /* background: yellowgreen; */
+    /* display: block !important;
+    overflow-x: auto !important;
+    width: 100% !important; */
+}
+
+
+.table td,
+.table th {
+
+    white-space: nowrap;
+    font-size: 11px;
+    background: #f9f9f9;
+
+}
+
+@media screen and (max-width:550px) {
+
+    #table-res tbody,
+    #table-res tr,
+    #table-res td {
+        display: block;
+    }
+
+    #table-res thead tr {
+        position: absolute;
+        top: -99999px;
+        right: -99999px;
+    }
+
+    #table-res td {
+        position: relative;
+        padding-right: 50%;
+
+    }
+
+    #table-res td::before {
+        content: attr(data-title);
+        position: absolute;
+        right: 6px;
+        font-weight: bold;
+    }
+
+    #table-res table {
+        /* width: 200px; */
+    }
+
+}

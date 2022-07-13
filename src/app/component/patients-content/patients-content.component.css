@@ -1,0 +1,40 @@
+.patient-visit-number {
+    background-color: var(--mainContent-bg-color);
+    /* background: pink; */
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.patient-visit-number p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.patients-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patients-details ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.patients-details li {
+    display: inline-block;
+    padding: 0px 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:470px) {
+
+    .container.patient-container {
+        padding: 2px;
+        margin: 0;
+    }
+}

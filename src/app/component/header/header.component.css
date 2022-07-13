@@ -1,0 +1,59 @@
+header {
+    background-color: var(--header-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+}
+
+header h5 {
+    color: var(--header-text-color);
+    font-weight: 600;
+    margin: 5px;
+}
+
+header span {
+    color: var(--header-span-color);
+    font-weight: 400;
+}
+
+.fonts {
+    padding: 5px;
+}
+
+.fonts svg {
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:480px) {
+    header {}
+
+    header h5 {
+        /* display: block; */
+        /* flex-wrap: wrap; */
+        font-size: 14px;
+        margin-right: 40px;
+        text-align: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    header span {
+        display: flex;
+        text-align: center;
+    }
+
+    .fonts svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .fonts svg:nth-child(2) {
+        display: none;
+    }
+
+}

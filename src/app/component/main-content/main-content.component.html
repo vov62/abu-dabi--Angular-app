@@ -1,0 +1,30 @@
+<!-- component of main content and side bar, main content component is nested component -->
+
+<div class="main-content d-flex">
+    <button class="btn open-sidebar-btn" (click)="openMenu() ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#BDD1E4" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </button>
+
+    <!-- Sidebar List -->
+
+    <div class="sidebar" [class.openCloseSidebar]="sideNavToggle">
+        <div class="header-box px-2">
+            <h4> R.R. Systems</h4>
+            <div class="logo">Logo</div>
+        </div>
+
+        <ul class="list-unstyled">
+            <li class="nav-list-item" *ngFor="let item of navList">
+                <i class="{{item.icon}}"></i>
+                <span>
+                    <a href="#" class="text-decoration-none">{{item.name}}</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <app-patients-content></app-patients-content>
+</div>

@@ -1,0 +1,70 @@
+<div>
+    <div class="referral-details d-flex">
+        <div class="referral-right">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">פרטי הפנייה</li>
+                <li class="list-group-item">פרטי התור</li>
+                <li class="list-group-item">מסמכים</li>
+                <li class="list-group-item">שאלונים</li>
+                <li class="list-group-item">ביקורים נוספים</li>
+            </ul>
+        </div>
+
+        <div class="referral-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="date" class="form-label mb-1">תאריך קבלה</label>
+                        <input type="text" class="form-control " aria-label="First name">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="time" class="form-label mb-1">שעת קבלה</label>
+                        <input type="text" class="form-control" aria-label="Last name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="service" class="form-label mb-1">סוג שירות</label>
+                        <input type="text" class="form-control" aria-label="Last name">
+                    </div>
+
+                    <div class="col-md-3 mt-2">
+                        <label for="service" class="form-label mb-1">גורם מפנה</label>
+                        <input type="text" class="form-control " aria-label="Last name">
+                    </div>
+                    <div class="col-md-3 mt-2">
+                        <label for="service" class="form-label mb-1">ת. פתיחת תיק</label>
+                        <input type="text" class="form-control" aria-label="Last name">
+                    </div>
+                    <div class="col-md-4 mt-1">
+                        <label for="service" class="form-label">רפנטית(לא פקידה קובעת)</label>
+                        <input type="text" class="form-control" aria-label="Last name">
+                    </div>
+                    <div class="col-md-3 mt-1">
+                        <label for="service" class="form-label">פקיד קבלה</label>
+                        <input type="text" class="form-control pt-1" aria-label="Last name">
+                    </div>
+                    <div class="form mt-1">
+                        <label for="text">הערות</label>
+                        <textarea class="form-control  mt-1" style="height:90px"></textarea>
+                    </div>
+                </div>
+
+                <hr class="hr" style="border: 1px solid #000;" />
+                <app-table-section style="overflow-x:auto"></app-table-section>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-list">
+        <ul>
+            <li class="bottom-list-item" *ngFor="let item of footerLinks">
+                <i class="{{item.icon}}"></i>
+                <span>
+                    <a href="#" class="text-decoration-none">{{item.name}}</a>
+                </span>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
